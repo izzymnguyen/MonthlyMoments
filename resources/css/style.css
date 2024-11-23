@@ -138,7 +138,8 @@ body {
 }
 
 
-#recent_video{
-
+.recent_video{
+    border: 5px solid white;  /* Red border with 5px thickness */
+    border-radius: 10px;         /* Optional: rounded corners for the border */
 }
 
