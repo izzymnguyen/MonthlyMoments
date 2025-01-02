@@ -110,6 +110,7 @@ select {
     display: flex;
     justify-content: center; /* Center horizontally */
     margin: 0; /* Remove default margin */
+    margin-bottom: 2em;
 
 }   
 
