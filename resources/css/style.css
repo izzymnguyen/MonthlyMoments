@@ -47,6 +47,8 @@ body {
 .main-body {
     display: flex;
     flex-direction: column;
+    height: auto;
+    width: auto;
 }
 
 .video_body {
@@ -55,7 +57,7 @@ body {
     width: 100%;
     height: 75%;
     z-index: -1;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .video_body::after {
@@ -80,8 +82,6 @@ body {
 
 /* Content overlaying the video */
 .banner-content {
-    display: flex;
-    flex-direction: row;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,14 +92,19 @@ body {
     margin: 10px;
     height: 75%;
     width: 75%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between; /* Space between items, optional if you want them exactly side by side */
 }
 
-.left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+.left, .right { /* Targeting both .left and .right divs */
+    flex: 1;               /* Distribute equal space to both */
+    padding: 20px;         /* Optional: Adds padding for content inside each div */
+    /* border: 1px solid black; */
+    text-align: center;    /* Optional: Centers the text inside the divs */
 }
+
 
 .banner-content h1 {
     text-align: center;
@@ -108,40 +113,38 @@ body {
     margin-bottom: 0px;
     font-family: "Aboreto", system-ui;
     padding-top: 1em;
+    overflow: visible;
 }
 
 .banner-content p {
     padding-top: 1em;
-    font-size: 1.2rem;
+    font-size: 1.1em;
     font-family: 'Times New Roman';
     text-align: center;
     padding: 1em;
-    padding-bottom: 0;
     margin: 1em;
+    overflow: visible;
 }
 
-.right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
+
 
 /* Ensure the video-container takes the full height and width */
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .youtube {
     border: 5px solid white;
     border-radius: 5px;
     max-height: 25vh;
+    width: 100%;
     height: auto;
+    margin-bottom: 3em;
+
 }
 
 /* Footer content styling */
@@ -159,69 +162,16 @@ body {
 /* Media Queries for smaller screens */
 
 /* Adjust layout for smaller screens (max-width: 768px) */
-@media (max-width: 768px) {
-    /* Adjust the navigation */
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .top_menu {
-        margin-left: 0;
-        font-size: 1.1em;
-    }
-
-    /* Banner content: Change to column layout */
-    .banner-content {
-        flex-direction: column;
-        width: 90%; /* Make it more narrow on smaller screens */
-        height: auto; /* Let it adjust the height based on content */
-        padding: 10px;
-    }
-
-    .left, .right {
-        width: 100%; /* Full width for smaller screens */
-        align-items: center;
-    }
-
-    .banner-content h1 {
-        font-size: 1.5rem; /* Reduce font size for smaller screens */
-    }
-
-    .banner-content p {
-        font-size: 1rem; /* Reduce font size for better readability */
-    }
-
-    .youtube {
-        max-height: 30vh; /* Slightly adjust max height */
-    }
-
-    /* Video body: Adjust position */
-    .video_body {
-        top: 8em;
-        height: 60%;
-    }
-}
 
 /* Adjust layout for extra small screens (max-width: 480px) */
-@media (max-width: 480px) {
-    .top_menu {
-        font-size: 1em; /* Reduce font size even more */
+@media (max-width: 1577px) {
+    .banner-content {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; /* Optionally center align the items */
+        overflow-y: auto;
     }
 
-    .banner-content h1 {
-        font-size: 1.2rem; /* Make header smaller */
-    }
 
-    .banner-content p {
-        font-size: 0.9rem; /* Make paragraphs smaller */
-    }
-
-    .video-container {
-        height: 50vh; /* Reduce the height of the video container */
-    }
-
-    .youtube {
-        max-height: 20vh; /* Reduce the height of the video thumbnail */
-    }
 }
+
+
