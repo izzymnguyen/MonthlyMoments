@@ -164,6 +164,9 @@ body {
     color: white;
 }
 
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
 /* Media Queries for smaller screens */
 
 /* Adjust layout for smaller screens (max-width: 768px) */
