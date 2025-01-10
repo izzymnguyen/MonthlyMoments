@@ -86,7 +86,7 @@ h2 {
 
 .youtube {
     border: 15px solid #A5B8B6 ;  /* Red border with 5px thickness */
-    width: 100vw;
+    width: 80vw;
     height: auto;
     max-width: 80vh;
     border-radius: 15px;
@@ -211,6 +211,5 @@ select {
 }
 
 .gif {
-    
     justify-content: center;
 }
