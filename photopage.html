@@ -6,10 +6,14 @@
     <title>My Website</title>
     
     <link rel='stylesheet' href='resources/css/videoGallery.css'>
+    <link rel='stylesheet' href='resources/css/gallery.css'>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <script src = 'resources/js/photos.js'defer></script>
+
 </head>
 <body>
     <nav>
@@ -17,19 +21,25 @@
             <span id="monthly">Monthly</span><br><span id="moments">Moments</span>
         </a>
         <a class = 'top_menu' href = 'videoGallery.html'>Video Diary</a>
-        <a class = 'top_menu' href = 'photopage.html'>Photos</a>
+        <a class = 'top_menu' href = 'photopage.html'>Gallery</a>
         <!-- <a class = 'top_menu' href = ''>Website Blueprints</a>
         <a class = 'top_menu' href = ''>Contact Me</a> -->
     </nav>
     <div class = 'main_body'>
-        <div class = 'top-header2'>
-            <h1 class = 'comingSoon'><span id="monthly">Coming</span><br><span id="moments">Soon</span></h1>
+        <div class = 'top-header'>
+            <h1><span id="monthly">Photo</span><br><span id="moments">Gallery Dump</span></h1>
+            <div class = 'dropdown'>
+                <form>
+                    <select id="months" name="months">
+                        <option value='all'>All</option>
+                        <option value='jan'>January</option>
+                    </select>
+                </form>
+            </div>
         </div>
     </div>
-    <div>
-        <p class = 'notFound'>Sorry this page is under construction come back again next time!! 
-            <br>
-        <img class = 'gif' src="resources\media\videos\work-work-in-progress.gif" alt="work in progress sign"></p>
+    <div class="photo-grid" id = 'photoWall'>
+       
     </div>
     <footer class="footer">
         <div class="footer-content">
