@@ -55,6 +55,9 @@ body {
     height: 100vh;
     width: auto;
 }
+.background{
+
+}
 
 .video_body {
     position: fixed;
@@ -215,7 +218,7 @@ p {
         display: flex;
         justify-content: space-between; /* Space between items, optional if you want them exactly side by side */
     }
-     
+
     .banner-content left{
         margin: 0;
     }
