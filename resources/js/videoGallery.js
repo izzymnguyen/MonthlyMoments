@@ -85,5 +85,33 @@ function updateContent() {
             Uploaded: Feb 16th, 2025
             </p>`;
         
+    } else if (selectedValue == 'video2'){
+        thumbnail.src = './resources/media/images/feb_thumnail.png';
+        videoLink.href = 'https://youtu.be/OeUm5mxptQ4';
+        contentElement.innerHTML = `
+        <p>Link to Video: <a href='https://youtu.be/OeUm5mxptQ4'>https://youtu.be/OeUm5mxptQ4</a>
+            <br><br>
+            ----
+            <br><br>
+            Long time no see! February was a wild adventure. Starting off the year strong, I celebrated Lunar New Years with my family on February 1st. The regular Lunar New Years celebration where I go around to my relatives house wishing them happy new years and recieving lucky money.
+            This year I got to meet my extended cousin Kaia :). She's an adorable little bean! The following week after I went back to my high school with Josh to check out the Blaine High School Asia Night Market. Story time! They thougth we were students so we got in for a cheaper price.
+            The market was pretty cool, had a lot of small asian businesses selling their products but in my opinion was pretty over-priced. I did, however, buy a phone charm (that broke.... a few weeks after... big sad). 
+
+            <br><br>
+            The following day was the VSAM tet show! To which I saw TRISHA show off her amazing sewing skills and absolutely killing it with both her looks and her talent!! HEHE. I went to the show was Tram and Wesley to which we played the pokemon trading card game. ... The addiction is real!
+            <br><br>
+
+            Something big this month that happened was talking to Louis. I took him out for his birthday as a birthday and realized near the beginning month that I liked him. Or maybe I have liked him but have just been refusing to accept it. Anyways we've gone on a few hang outs with just us two and towards the end of the month, 
+            I asked if he liked anyone and we've been going on a couple dates since. Check in for next month to check in the next update. 
+            
+            <br><br>
+
+            Lastly, another big thing I was able to do this month is go to New Jersery/New York City. I took a weekend trip with Gloria and we went to the BabyMonster together! It was super fun! Vocals were so good! The day after we went to New York City together and just went around, made some keychains, and overall just had a good time :)
+            <br><br>
+            ----
+            <br><br>
+            Uploaded: March 8th, 2025
+            </p>`;
+        
     }
 }

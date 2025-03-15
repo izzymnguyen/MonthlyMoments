@@ -2,12 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Manually define images for each category
     const images = {
         all: [
-            './resources/media/images/jan.jpg'
+            './resources/media/images/jan.jpg',
+            './resources/media/images/feb.png'
         ],
         jan: [
             './resources/media/images/jan.jpg'
 
         ],
+        feb: [
+            './resources/media/images/feb.png'
+        ]
     };
 
     const galleryContainer = document.getElementById('photoWall');

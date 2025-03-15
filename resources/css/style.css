@@ -49,8 +49,10 @@ body {
 
 .main-body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: auto;
+    height: 100vh;
     width: auto;
 }
 
@@ -172,14 +174,51 @@ p {
 /* Adjust layout for smaller screens (max-width: 768px) */
 
 /* Adjust layout for extra small screens (max-width: 480px) */
-@media (max-width: 1577px) {
+@media (max-width: 1000px) {
     .banner-content {
-        flex-direction: column; /* Stack the items vertically */
-        align-items: center; /* Optionally center align the items */
-        overflow-y: auto;
+        flex-direction: column; /* Stack the left and right sections vertically */
+        overflow-y: scroll;
+        width: 95%;
+        height: 95%;
     }
 
+    #monthly {
+        font-size: 1.2em;
+        color: black;
+    }
+    
+    #moments {
+        font-size: 1.2em;
+        color: white;
+    }
+    
+    .banner-content p {
 
+        padding-top: 1em;
+        font-size: 0.95em;
+        font-family: 'Times New Roman';
+        text-align: center;
+        overflow: visible;
+        
+    }
+    
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background: rgba(194, 180, 180, 0.75);
+        margin: 0;
+        overflow: scroll;
+    
+        display: flex;
+        justify-content: space-between; /* Space between items, optional if you want them exactly side by side */
+    }
+     
+    .banner-content left{
+        margin: 0;
+    }
 }
 
 
