@@ -113,5 +113,21 @@ function updateContent() {
             Uploaded: March 8th, 2025
             </p>`;
         
+    } else if (selectedValue == 'video3'){
+        thumbnail.src = './resources/media/images/march_thumbnail.jpg';
+        videoLink.href = 'ttps://youtu.be/Rz47DcKCrww';
+        contentElement.innerHTML = `
+        <p>Link to Video: <a href='https://youtu.be/Rz47DcKCrww'>https://youtu.be/Rz47DcKCrww</a>
+                <br><br>
+                ----
+                <br><br>
+                UPDATE THIS
+                
+                <br><br>
+    
+                <br><br>
+                ----
+                <br><br>
+                Uploaded: April 22nd, 2025`;
     }
-}
+} 

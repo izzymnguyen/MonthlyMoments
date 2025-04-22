@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Manually define images for each category
     const images = {
         all: [
-            './resources/media/images/jan.jpg',
-            './resources/media/images/feb.png'
+            './resources/media/images/march.png',
+            './resources/media/images/feb.png',
+            './resources/media/images/jan.jpg'
         ],
         jan: [
             './resources/media/images/jan.jpg'
@@ -11,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         feb: [
             './resources/media/images/feb.png'
+        ],
+        march: [
+            './resources/media/images/march.png'
         ]
     };
 
